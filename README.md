@@ -76,3 +76,11 @@ git submodule update --remote
 ```
 
 This modifies the references in the main repo, and these changes needs to be comitted and pushed.
+
+
+# Allow for visuals (rviz)
+Allow user to access the X server inside the docker (see visuals such as rviz inside from the container).
+On your host PC run the following:
+```bash
+xhost +local:root
+```
